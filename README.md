@@ -1,5 +1,5 @@
-jquery-rest-json-groovy-server
-==============================
+Description
+===========
 
 Hello world example of a JQuery client calling a rest service (implemented in Groovy) that returns JSON
 
