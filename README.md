@@ -8,4 +8,4 @@ Instructions
 1. Install groovy
 2. execute
 
-    sh run.sh
+        sh run.sh
