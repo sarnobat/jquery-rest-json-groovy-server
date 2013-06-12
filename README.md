@@ -9,3 +9,7 @@ Instructions
 2. execute
 
         sh run.sh
+
+Troubleshooting
+===============
+I've kept these instructions as mimimal as possible. If you have problems, please create an issue.
