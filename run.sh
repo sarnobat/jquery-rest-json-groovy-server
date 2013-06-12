@@ -1,8 +1,6 @@
 cd client
-# Mac
-open "index.html"
-# Linux
-# xdg-open "index.html"
+
+open "index.html" || xdg-open "index.html"
 
 cd ..
 
