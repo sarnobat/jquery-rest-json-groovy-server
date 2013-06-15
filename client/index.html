@@ -7,7 +7,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $.getJSON("http://localhost:4444?param1=value1",function(result){
+    $.getJSON("http://localhost:4444?param1=" + document.getElementById("urls").innerHTML,function(result){
       $.each(result, function(i, field){
         $("div").append(i + " " + field + " ");
       });
@@ -18,7 +18,8 @@ $(document).ready(function(){
 </head>
 <body>
 
-<button>Get JSON data</button>
+<textarea id="urls">http://www.yahoo.com</textarea>
+<button>Stash this</button>
 <div></div>
 
 </body>
