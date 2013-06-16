@@ -32,13 +32,9 @@ class MyHandler implements HttpHandler {
 
 	public void handle(HttpExchange t) throws IOException {
 		JSONObject json = new JSONObject();
-		print('1');
 		String query = t.getRequestURI();
-		print('2');
 		Map<String, String> map = getQueryMap(query);  
-		print('3');
 		String  value = map.get("param1");
-		print('4');
 		json.put("myKey",value);
 		println('Request headers: ' + t.getRequestHeaders());
 		println('Request URI' + t.getRequestURI());
