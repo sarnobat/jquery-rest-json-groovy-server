@@ -16,32 +16,21 @@ import com.sun.net.httpserver.HttpServer;
 class MyHandler implements HttpHandler {
 	public Map<String, String> getQueryMap(String query)  
 	{  
-		println('getQueryMap() - 1');
 		Pattern pattern = Pattern.compile("/\\?.*");
 		
-		println('getQueryMap() - 1.1');
 		Matcher matcher = pattern.matcher(query);
-		println('getQueryMap() - 1.2 - ' + matcher.group());
 		String[] params = query.split("&");  
-		println('getQueryMap() - 2');
 		Map<String, String> map = new HashMap<String, String>();  
-		println('getQueryMap() - 3');
 		for (String param : params)  
 		{  
-			println('getQueryMap() - 4');
 			String name = param.split("=")[0];  
-			println('getQueryMap() - 5');
 			String value = param.split("=")[1];  
-			println('getQueryMap() - 6');
 			map.put(name, value);  
-			println('getQueryMap() - 7: ' + value);
 		}  
-		println('getQueryMap() - 8');
 		return map;  
 	}  
 
 	public void handle(HttpExchange t) throws IOException {
-		println('Request received');
 		JSONObject json = new JSONObject();
 		print('1');
 		String query = t.getRequestURI();
