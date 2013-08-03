@@ -48,12 +48,7 @@ class MyHandler implements HttpHandler {
 		println('handle() - 7');
 		OutputStream os = t.getResponseBody();
 		println('handle() - 8');
-		try {
-			os.write(json.toString().getBytes());
-		} catch (Exception e) {
-			e.printStackTrace();
-			println(e.getStackTrace());
-		}
+		os.write(json.toString().getBytes());
 		println('handle() - 9');
 		os.close();
 		println('handle() - 10');
