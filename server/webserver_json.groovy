@@ -41,17 +41,11 @@ class MyHandler implements HttpHandler {
 		println('value: ' + value);
 		json.put("foo","bar");
 		t.getResponseHeaders().add("Access-Control-Allow-Origin","*");
-		println('handle() - 5');
 		t.getResponseHeaders().add("Content-type", "application/json");
-		println('handle()' - 6);
 		t.sendResponseHeaders(200, json.toString().length());
-		println('handle() - 7');
 		OutputStream os = t.getResponseBody();
-		println('handle() - 8');
 		os.write(json.toString().getBytes());
-		println('handle() - 9');
 		os.close();
-		println('handle() - 10');
 	}
 }
     
