@@ -5,10 +5,18 @@ Hello world example of a JQuery client calling a rest service (implemented in Gr
 
 Instructions
 ============
+
+*nix
+----
 1. Install groovy
 2. execute
 
         sh run.sh
+
+Windows
+-------
+
+(to be added)
 
 Troubleshooting
 ===============
