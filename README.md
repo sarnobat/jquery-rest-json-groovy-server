@@ -6,8 +6,8 @@ Hello world example of a JQuery client calling a rest service (implemented in Gr
 Instructions
 ============
 
-*nix
-----
+*nix (Unix, Linux, Mac OS X)
+----------------------------
 1. Install groovy
 2. execute
 
